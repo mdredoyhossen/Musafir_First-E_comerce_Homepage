@@ -1,0 +1,432 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: 'Spartan', sans-serif;
+ }
+
+ h1 {
+     font-size: 580px;
+     line-height: 64px;
+     color: #222;
+ }
+
+ h2 {
+     font-size: 46px;
+     line-height: 54px;
+     color: #222;
+ }
+
+ h4 {
+     font-size: 20px;
+     color: #222;
+ }
+
+ h6 {
+     font-size: 12px;
+     font-weight: 700;
+ }
+
+ p {
+     font-size: 16px;
+     color: #465b52;
+     margin: 15px 0 20px 0;
+ }
+
+ .section-p1 {
+     padding: 40px 80px;
+ }
+
+ body {
+     width: 100%;
+ }
+
+ /* header start */
+ #logo {
+     margin: -24px;
+     padding: 8px;
+ }
+
+ #header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background-color: #0e7e4a;
+     position: sticky;
+     top: 0;
+     left: 0;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+ }
+
+ .search {
+     padding: 11px 118px 13px 14px;
+     left: 105px;
+     border: none;
+     border-radius: 25px;
+     text-align: left;
+     outline: none;
+     position: absolute;
+     bottom: 18px;
+
+ }
+
+ .sicon {
+     position: absolute;
+     left: 365px;
+     bottom: 16px;
+     margin: 5px;
+     padding: 5px;
+     background-color: #0e7e4a;
+     border-radius: 25px;
+     color: white;
+     transition: 0.7s;
+     cursor: pointer;
+ }
+
+ .sicon:hover {
+     background-color: white;
+     color: #0e7e4a;
+     border: 1px solid #0e7e4a;
+     padding: 4px;
+     transition: 0.7s;
+ }
+
+ #navbar {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ #navbar li {
+     position: relative;
+     list-style: none;
+     padding: 0 20px;
+     margin: 5px;
+     transition: 0.7s;
+ }
+
+ #navbar li.active2 {
+     margin-left: 1px;
+     background-color: #ffffff33;
+     padding: 10px 25px;
+     border-radius: 8px;
+     text-align: center;
+ }
+
+ #navbar li:hover {
+     margin-left: 1px;
+     background-color: #ffffff33;
+     padding: 21px 24px;
+     transition: 0.5s;
+     border-radius: 8px;
+     text-align: center;
+
+ }
+
+ #navbar li a {
+     text-decoration: none;
+     color: white;
+     transition: 0.9s;
+     padding: 5px;
+     overflow: auto;
+ }
+
+ #navbar li a:hover,
+ #navbar li a.active {
+     color: rgba(255, 239, 19, 0.911);
+     transition: 0.9s;
+ }
+
+ /* home page */
+ #discount {
+     padding: 5px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: center;
+     background-image: url(banner/ramadan\ mubarak.png);
+     height: 120vh;
+     width: 100%;
+     background-size: cover;
+     background-position: top: 10% right:0px;
+     padding: 0px 80px;
+ }
+
+ #discount h4 {
+     padding-bottom: 15px;
+     font-size: 30px;
+ }
+
+ #discount h2 {
+     color: #0e7e4a;
+ }
+
+ #discount button {
+     color: white;
+     border: none;
+     background-color: #0e7e4a;
+     padding: 10px;
+     border-radius: 20px;
+     cursor: pointer;
+     transition: 0.7s;
+     height: 60px;
+     width: 150px;
+     font-size: 20px;
+ }
+
+ #discount button:hover {
+     background-color: white;
+     color: #0e7e4a;
+     border: 1px solid #0e7e4a;
+     border-radius: 5px;
+ }
+
+ /* feature */
+ #future {
+     border-bottom: 2px solid rgba(166, 164, 164, 0.405);
+ }
+
+ #delivery {
+     max-width: 100%;
+     height: auto;
+ }
+
+
+ #futuhead {
+     background-color: #0e7e4a;
+     text-align: center;
+     margin: 1px;
+ }
+
+ #futuhead h2 {
+     color: white;
+ }
+
+ #future .fu-box {
+     width: 180px;
+     text-align: center;
+     padding: 25px 15px;
+     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+     border: 1px solid #cce7d0;
+     border-radius: 4px;
+     margin: -20px;
+     transition: 0.9s;
+     cursor: pointer;
+
+ }
+
+ #future .fu-box:hover {
+     border: 1px solid #0e7e4a83;
+     box-shadow: 10px 10px 54px rgba(161, 241, 201, 0.705);
+     background-color: rgb(255, 255, 255);
+     transition: 0.5s;
+     border: 1px solid #cce7d0;
+     border-radius: 30px;
+     background-color: rgba(224, 220, 140, 0.288);
+     cursor: pointer;
+
+ }
+
+ #future .fu-box h6 {
+     background-color: #0e7e4a;
+     color: white;
+     padding: 9px 8px 6px 8px;
+     border-radius: 4px;
+ }
+
+ #future {
+     display: flex;
+     justify-content: center;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+
+ /* Product List */
+ #splist {
+     max-width: 100%;
+     height: auto;
+     background-color: #28f39531;
+
+ }
+
+ .p_na {
+     text-align: center;
+     padding: 30px;
+ }
+
+ #product_list {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+
+ .p1 {
+     width: 230px;
+     overflow: hidden;
+     margin: 20px;
+     text-align: center;
+ }
+
+ .p1 img {
+     border-radius: 20px;
+ }
+
+ .fp {
+
+     max-width: 100%;
+     height: auto;
+     transition: 0.9s;
+ }
+
+ .fp:hover {
+     padding: 10px;
+     transition: 1s;
+     cursor: pointer;
+ }
+
+ #p_list {
+     background-color: rgb(255, 255, 255);
+     margin: 10px;
+     border: 1px solid #0e7e4a58;
+     border-radius: 3px;
+     transition: 0.9s;
+
+ }
+
+ #p_list:hover {
+     margin: 10px;
+     border: 1px solid #0e7e4a6d;
+     box-shadow: 0px 0px 20px rgba(104, 138, 107, 0.773);
+     border-radius: 20px;
+     transition: 0.9s;
+     cursor: pointer;
+ }
+
+ #p_name {
+     font-family: "Bebas Neue", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+ }
+
+ /* Product Details */
+
+
+ #re .star {
+     color: rgb(50, 133, 32);
+ }
+
+ #re .price {
+     position: absolute;
+     left: 5px;
+ }
+
+ .nm {
+
+     display: flex;
+     justify-content: space-between;
+     margin-top: 20px;
+ }
+
+ .add_cart {
+     color: white;
+     background-color: #0e7e4a;
+     padding: 8px;
+     border-radius: 50px;
+     transition: 0.9s;
+ }
+
+ .add_cart:hover {
+     color: #0e7e4a;
+     background-color: white;
+     border: 1px solid #0e7e4a;
+     padding: 8px;
+     border-radius: 50px;
+     transition: 0.6s;
+ }
+
+ .price {
+     color: red;
+ }
+
+ /* Load Section */
+ .loadmore {
+     padding: 15px;
+     background-color: #28f39531;
+     text-align: center;
+ }
+
+ .loadmore a {
+     text-decoration: none;
+     color: #0e7e4a;
+     padding: 10px 150px;
+     border: 1px solid #0e7e4a;
+     transition: 0.5s;
+     border-radius: 3px;
+ }
+
+ .loadmore a:hover {
+     background-color: #0e7e4a;
+     color: white;
+     transition: 0.5s;
+ }
+
+ /* Footer */
+
+ #foot {
+     background-color: #28f39422;
+     padding: 0px 80px;
+     display: flex;
+     justify-content: space-between;
+     max-width: 100%;
+     height: auto;
+ }
+
+ #foot .cus {
+     color: #0e7e4a;
+     margin-bottom: 6px;
+     margin-top: 10px;
+ }
+
+ .sec1 li {
+     list-style: none;
+ }
+
+ .sec1 a {
+     text-decoration: none;
+     color: black;
+     transition: 0.6s;
+     font-size: 12px;
+ }
+
+ .sec1 a:hover {
+     border-bottom: 1px solid black;
+     transition: 0.6s;
+ }
+
+ .flag {
+     height: 4vh;
+     border-radius: 1px;
+     position: relative;
+ }
+
+ .address {
+     position: absolute;
+     margin: 4px;
+ }
+
+ .store img {
+     height: 8vh;
+ }
+
+ .flag2 li {
+     margin: 10px;
+
+ }
+ .soc{
+    display: flex;
+ }
+ .social{
+    padding: 0px 05px;
+    display: flex;
+    height:7vh;
+ }
